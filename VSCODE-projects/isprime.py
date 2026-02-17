@@ -4,7 +4,8 @@ def is_prime(number: int) -> bool: ##
     
     if number < 2:
         return False
-    for divider in range(2,number):
+    for divider in range(2,int(number ** 0.5)+1):
+        
         print(divider)
         if number% divider == 0:
             return False                                                   # % maradekos osztas
