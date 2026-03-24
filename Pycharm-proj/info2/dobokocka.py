@@ -3,10 +3,7 @@ import random
 
 def dice():
     dobas=random.randint(1,6)
-
-
-
-
+    return dobas
 
 
 if __name__ == "__main__":

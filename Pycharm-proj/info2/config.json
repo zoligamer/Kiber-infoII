@@ -1,0 +1,52 @@
+{
+  "filter": {
+    "type": "AndFilter",
+    "args": {
+      "filters": [
+        {
+          "type": "LengthFilter",
+          "args": {
+            "min": 8,
+            "max": 12
+          }
+        },
+        {
+          "type": "UpperCharFilter",
+          "args": {
+            "min": 1
+          }
+        },
+        {
+          "type": "LowerCharFilter",
+          "args": {
+            "min": 1
+          }
+        },
+        {
+          "type": "CharMethodFilter",
+          "args": {
+            "min": 1,
+            "method_name" : "isascii"
+          }
+        },
+        {
+          "type": "NumericCharFilter",
+          "args": {
+            "min": 1
+          }
+        },
+        {
+          "type": "SpecialCharFilter",
+          "args": {
+            "special_chars": [
+              ".",",","*","&","@","}","{","]","[","!","#","$",
+              "%","^","(",")","_","+","-","=","|","\\","/","?"
+              ,">","<","~","`","'","\"",":",";"
+            ],
+            "min": 3
+          }
+        }
+      ]
+    }
+  }
+}
