@@ -14,7 +14,7 @@ file_handler.setLevel(logging.INFO)
 formater=logging.Formatter("%(message)s")
 file_handler.setFormatter(formater)
 logger.addHandler(file_handler)
-
+logger.propagate = False
 
 def packet_callback(packet):
     print(packet.summary())
